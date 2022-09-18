@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="xxx.php" method="get">
+        <input type="text"> <br>
+        <label for="boy">男</label> <input type="radio" name="sex" id="boy"> <label for="girl">女</label> <input type="radio" name="sex" id="girl">
+        <input type="submit" value="free">
+        <select>
+            <option>a</option>
+            <option selected="selected">b</option>
+        </select>
+        <textarea rows="10" cols="10">文本內容</textarea>
+   </form>
+</body>
+</html>
