@@ -8,16 +8,20 @@
 </head>
 <body>
     <table cellpadding="10" cellspacing="0" border="1" width="500" height="250" align="center">
-        <tr>
-            <th>排名</th>
-            <th>關鍵字</th>
-            <th>趨勢</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>關鍵字</th>
+                <th>趨勢</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
