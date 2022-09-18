@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>青春啊青春</h4>
+    <table width="500">
+        <tr>
+            <td>性別</td>
+            <td><input type="radio" name="sex" id="boy"> <label for="boy">男</label> <input type="radio" name="sex"
+                    id="girl"> <label for="girl">女</label></td>
+        </tr>
+        <tr>
+            <td>年齡</td>
+            <td><select>
+                    <option>選擇年紀</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                </select><select>
+                    <option>選擇不足</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select> </td>
+        </tr>
+        <tr>
+            <td>地區</td>
+            <td><input type="text" value="地區" id=""> </td>
+        </tr>
+        <tr>
+            <td>類型</td>
+            <td><input type="checkbox">可愛<input type="checkbox" checked="checked">sexy</td>
+        </tr>
+        <tr>
+            <td>介紹</td>
+            <td><textarea rows="10" cols="10">介紹</textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="註冊"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="" id="" checked>同意註冊</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="#">立即登錄</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h3>我承諾</h3>
+                <ul>
+                    <li>18歲</li>
+                    <li>單身</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
