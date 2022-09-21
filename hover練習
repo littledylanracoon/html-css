@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav a {
+            display: inline-block;
+            text-decoration: none;
+            width: 120px;
+            height: 58px;
+            text-align: center;
+            background-color: pink;
+            background: url(202011_whiteChristmas_type1_1920.jpg) no-repeat;
+            line-height: 58px;
+            color: #fff;
+        }
+        /*如果要按到不一樣的有不一樣的效果就不能寫a:hover 要在a裡設class分開(?)*/
+        a:hover{
+            background-image: url(messageImage_1660980048283.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#" class="color">繽紛</a>
+        <a href="#" class="color">繽紛</a>
+        <a href="#" class="color">繽紛</a>
+        <a href="#" class="color">繽紛</a>
+    </div>
+</body>
+
+</html>
