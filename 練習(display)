@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100px;
+            height: 25px;
+            text-indent: 2em;
+            background-color: skyblue;
+            line-height: 25px;
+        }
+        a:hover {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#">手機</a>
+        <a href="#">電視</a>
+        <a href="#">平板</a>
+        <a href="#">筆記本</a>
+    </div>
+</body>
+
+</html>
