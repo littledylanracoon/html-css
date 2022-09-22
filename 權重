@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            color: pink;
+        }
+        .test {
+            color: red!important;
+        } /*類比元素選擇器權重高 所以是紅色 加了!important之後無窮優先*/
+        #demo {
+            color: green;
+        } /*id權重高 所以是綠色 如果有style style最高所以還是紫色*/
+        #father {
+            color: blue;
+        }
+
+
+        p {
+            color: purple; /*父親的繼承權重只有0 會是紫色*/
+        }
+        body {
+            color: black; 
+        }
+
+
+        a { /*a默認藍色有底線 算被選擇所以不會繼承父親 要額外再寫*/
+            color: brown;
+        }
+
+
+        ul li { /*複合選擇器權重疊加 0001+0001=0002*/
+            color: green;
+        }
+        li { /*權重0001*/
+            color: blueviolet;
+        }
+        .nav li { /*權重0010+0001=0011最大*/
+            color: black;
+        }
+
+
+        .cc li { /*權重10+1=11*/
+            color: coral;
+        }
+        #aq { /*權重100*/
+            color: aqua;
+        }
+        .cc .hi { /*權重10+10=20*/
+            color: firebrick;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" id="demo" style="color:purple">美</div>
+    <div id="father">
+        <p>cool</p>
+    </div>
+    <a href="#">ee</a>
+    <ul class="nav">
+        <li>hihi</li>
+        <li>hihi</li>
+        <li>hihi</li>
+    </ul>
+    <ul class="cc">
+        <li id="aq" class="hi">hi</li>
+        <li>hi</li>
+        <li>hi</li>
+    </ul>
+</body>
+
+</html>
