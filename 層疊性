@@ -1,0 +1,33 @@
+層疊性
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            color: pink;
+            font: 12px/1.5 'Microsoft YaHei';
+        }
+        div {
+            font-size: 14px;
+            /*繼承父的行高1.5(倍) 所以div的行高是文字大小14*1.5=21*/
+        }
+        /*li沒有設定大小 則繼承父親body的12/1.5 文字大小12 行高12*1.5=18*/
+    </style>
+</head>
+
+<body>
+    <div>粉紅</div>
+    <p>紅</p>
+    <ul>
+        <li>嗨嗨</li>
+    </ul>
+</body>
+
+</html>
