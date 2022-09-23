@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        .box {
+            display: inline-block; /*讓盒子可以在同一行*/
+            width: 298px;
+            height: 515px;
+            background-color: #fff;
+            margin: 100px auto; /*塊級盒子水平居中*/
+            margin-right: 20px;
+        }
+        .box img {
+            width: 100%; /*塞在盒子裡*/
+        }
+        .review {
+            height: 70px; /*不管文字多少盒子都一樣大*/
+            font-size: 14px;
+            padding: 0 28px; /*p沒有width屬性 所以padding不會撐開盒子寬度*/
+            margin-top: 30px;/*因為有高度 padding上下的話會撐開盒子 用margin就可以解決問題*/
+        }
+        .good {
+            font-size: 12px;
+            color: #b0b0b0;
+            margin-top: 20px;
+            padding: 0 28px;
+        }
+        .info {
+            padding: 0 28px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .info h4 {
+            display: inline-block;
+            font-weight: 400;
+        }
+        .info span {
+            color: #ff6700;
+        }
+        .info em {
+            font-style: normal;
+            color: #ebe4e0;
+            margin: 0 6px 0 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#"><img src="tt.jpg" alt=""></a>
+        <p class="review"><a href="#">快遞很好服務很好品質很好都很好</a></p>
+        <div class="good">來自gray的評價</div>
+        <div class="info">
+            <h4><a href="#">你好你好你好啊</a></h4>
+            <em>|</em>
+            <span>99.99元</span>
+        </div>
+    </div>
+    <div class="box">
+        <a href="#"><img src="tt.jpg" alt=""></a>
+        <p class="review"><a href="#">快遞很好服務很好品質很好都很好</a></p>
+        <div class="good">來自gray的評價</div>
+        <div class="info">
+            <h4><a href="#">你好你好你好啊</a></h4>
+            <em>|</em>
+            <span>99.99元</span>
+        </div>
+    </div>
+    <div class="box">
+        <a href="#"><img src="tt.jpg" alt=""></a>
+        <p class="review"><a href="#">快遞很好服務很好品質很好都很好</a></p>
+        <div class="good">來自gray的評價</div>
+        <div class="info">
+            <h4><a href="#">你好你好你好啊</a></h4>
+            <em>|</em>
+            <span>99.99元</span>
+        </div>
+    </div>
+</body>
+
+</html>
