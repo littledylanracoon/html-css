@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 1px solid blue;
+            border-top: 1px solid red;
+            /*把border的上邊框層疊掉了 top要寫下面就近原則*/
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        報名通啟底部有「報名回調」，需要得少和家長簽名，活動當天報到時繳回。麻煩關懷者將通啟印給得少家長，謝謝。
+    </div>
+    <table cellspacing="0" align="center">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>關鍵字</th>
+                <th>趨勢</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
