@@ -14,7 +14,7 @@
             display: block;
             width: 100px;
             height: 25px;
-            text-indent: 2em;
+            text-indent: 2em; //但其實應該用padding較準確: padding-left:30px
             background-color: skyblue;
             line-height: 25px;
         }
