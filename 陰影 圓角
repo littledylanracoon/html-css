@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .hihi {
+        width: 150px;
+        height: 200px;
+        background-color: pink;
+        border-radius: 100px;
+        margin: 100px auto;
+      }
+      .hihi:hover {
+        box-shadow: 10px 10px 10px -4px rgba(0,0, 0, .3);
+      }
+      .hi {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        border-radius: 50%;
+      }
+      .hihihi {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        border-radius: 10px 20px 30px 40px;
+      }
+    </style>
+</head>
+
+<body>
+   <div class="hi"></div>
+    <div class="hihi"></div>
+    <div class="hihihi"></div>
+</body>
+
+</html>
