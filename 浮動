@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+       .a {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        float: left;
+       }
+       .b {
+        width: 200px;
+        height: 400px;
+        background-color: skyblue;
+        float: left;
+       }
+       p {
+        /*原本沒浮動時是默認和父親一樣寬度 但加浮動後就變成內容多寬盒子多寬(行內塊元素特點)*/
+        height: 400px;
+        background-color: aqua;
+        float: right;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <p>hihihi</p>
+</body>
+
+</html>
