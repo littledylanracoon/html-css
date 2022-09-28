@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        .box {
+            width: 1226px;
+            height: 615px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+        .long {
+            width: 234px;
+            height: 615px;
+            background-color: gold;
+           
+            float: left;
+        }
+        .fat {
+            width: 992px;
+            height: 615px;
+            float: left;
+            background-color: skyblue
+        }
+        .fat>div { /*每個div都有小的margin left 而magin bottom其實下面外邊框有溢出 但因浮動+外邊距不撐大盒子所以看起來沒影響*/
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: thistle;
+            margin-left: 14px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="long">
+
+        </div>
+        <div class="fat">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+</body>
+
+</html>
