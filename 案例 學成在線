@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #f3f5f7;
+            height: 3000px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .w {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            height: 42px;
+            margin: 10px auto;
+            background-color: pink;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo img {
+            height: 20px;
+            margin: 11px;
+        }
+
+        .nav {
+            float: left;
+            margin: 0 60px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+        .nav li {
+            float: left; /*原本a是行內排列 但因為有li才變塊級 所以要給li加浮動*/
+            margin: 0 15px;
+        }
+
+        .nav a { /*字數不一樣不方便給固定寬 但可以padding撐開*/
+            display: block;
+            font-size: 15px;
+            line-height: 42px;
+            height: 36px;
+            padding: 0 10px;
+        }
+        .nav a:hover {
+            border-bottom: 2px solid #00a4ff;
+        }
+        .search {
+            float: left;
+            margin: 11px 50px;
+            width: 412px;
+            border-radius: 5px;
+        }
+
+        .search input {
+            float: left;
+            height: 20px;
+            width: 325px;
+            padding-left: 15px;
+        }
+        .search button {
+            float: left;
+            height: 20px;
+            width: 30px;
+            margin-left: 10px;
+            border: 0; /*button默認有邊框要去掉*/
+            background: url(ad.png);
+        }
+        .user {
+            float: right;
+            margin: 11px;
+        }
+
+        .user img {
+            height: 15px;
+        }
+        .banner {
+            height: 421px;
+            background-color: skyblue;
+        }
+        .center {
+            height: 50px;
+            
+        }
+        .subnav {
+            float: left;
+            width: 190px;
+            height: 421px;
+            background-color: rgba(0,0,0,.3);
+        }
+        .subnav ul li a {
+            font-size: 14px;
+            color: #fff;
+        }
+        .subnav ul li {
+            height: 45px;
+            line-height: 45px;
+            padding: 0 20px;
+        }
+        .subnav ul li a:hover {
+            color: #00a4ff;
+        }
+        .subnav ul span {
+            float: right;
+        }
+        .course {
+            float: right;
+            width: 230px;
+            height: 320px;
+            background-color: white;
+            margin-top: 50px;
+        }
+        .course .title {
+            background-color: skyblue;
+            color: white;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            font-size: 18px;
+        }
+        .content { 
+            padding: 0 20px;
+        }
+        .content ul {
+           
+            margin-bottom: 10px;
+        }
+        .content ul li {
+            border-bottom: 1px solid gray;
+            padding: 14px 0;
+        }
+        .content .all {
+            border: 2px solid blue;
+            height: 38px;
+            text-align: center;
+            line-height: 38px;
+            color: blue;
+            display: block;
+            margin-top: 5px;
+        }
+        .content ul li h4 {
+            font-size: 16px;
+        }
+        .content ul li p {
+            font-size: 12px;
+        }
+        .goods {
+            box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, .1);
+            margin-top: 20px;
+            background-color: white;
+            height: 60px;
+            line-height: 60px;
+            
+        }
+        .goods h3 {
+            float: left;
+            margin-left: 30px;
+            font-size: 16px;
+            color: #00a4ff;
+        }
+        .goods-item {
+            float: left;
+            margin-left: 30px;
+        }
+        .goods-item a {
+            padding: 0 30px;
+            font-size: 16px;
+            border-left: 1px solid #ccc;
+        }
+        .mod {
+            float: right;
+            display: block;
+            margin-right: 30px;
+            font-size: 16px;
+            color: #00a4ff;
+        }
+        .box {
+            margin-top: 30px;
+            
+        }
+        .box-bd ul {
+            width: 1225px; /*ul足夠寬就能裝五個盒子*/
+
+        }
+        .box-bd ul li {
+            float: left;
+            width: 228px;
+            height: 270px;
+            background-color: white;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        .box-bd ul li img {
+            width: 100%;
+        }
+        .box-bd ul li h4 {
+            margin: 20px 20px 20px 25px;
+            font-size: 14px;
+        }
+        .box-bd .info {
+            margin: 0 20px 0 25px;
+            font-size: 12px;
+        }
+        .box-bd .info span {
+            color: orange;
+        }
+        .box-hd {
+            height: 45px;
+        }
+        .box-hd h3 {
+            float: left;
+            font-size: 20px;
+        }
+        .box-hd a {
+            float: right;
+            font-size: 12px;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+        .clearfix:before, .clearfix:after { /*上面盒子沒有給高度 所以會變成一條線 需要清除浮動*/
+            content: "";
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix {
+            *zoom:1;
+        }
+        .footer { 
+            height: 415px;
+            background-color: #00a4ff;
+           
+        }
+        .footer .c {
+            
+            height: 120px;
+            padding-top: 35px; /*用margin-top會有外邊距合併問題*/
+        }
+        .copyright { /*可以不用給寬 因為浮動盒子會自動檢測寬度*/
+            float: left;
+            background-color: #00a4ff; 
+        }
+        .copyright img {
+            height: 90px;
+        }
+        .copyright p {
+            font-size: 12px;
+            color: #666;
+            margin: 20px 0 15px 0;
+        }
+        .copyright a {
+            display: block;
+            border: 1px solid blue;
+            color: blue;
+            width: 118px;
+            height: 33px;
+            line-height: 33px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .links {
+            float: right;
+        }
+        .links dl {
+            float: left;
+            margin-left: 80px;
+            margin-right: 20px;
+        }
+        .links dt {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .links dd a{
+            color: #333;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header w">
+        <div class="logo">
+            <img src="ad.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">課程</a></li>
+                <li><a href="#">規劃</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" name="" id="" value="輸入">
+            <button></button>
+        </div>
+        <div class="user">
+            <img src="1200px.png" alt="">
+            blanket
+        </div>
+    </div>
+    <div class="banner">
+        <div class="center w">
+            <div class="subnav">
+                <ul>
+                    <li><a href="#">前端<span> > </span></a></li>
+                    <li><a href="#">後端<span> > </span></a></li>
+                    <li><a href="#">移動<span> > </span></a></li>
+                    <li><a href="#">人工<span> > </span></a></li>
+                    <li><a href="#">智能<span> > </span></a></li>
+                    <li><a href="#">商業<span> > </span></a></li>
+                    <li><a href="#">設計<span> > </span></a></li>
+                    <li><a href="#">產品<span> > </span></a></li>
+                    <li><a href="#">大數據<span> > </span></a></li>
+                </ul>
+            </div>
+            <div class="course">
+                <h3 class="title">我的課程表</h3>
+                <div class="content">
+                    <ul>
+                        <li><h4>繼續學習</h4><p>正在學習</p></li>
+                        <li><h4>繼續學習</h4><p>正在學習</p></li>
+                        <li><h4>繼續學習</h4><p>正在學習</p></li>
+                    </ul>
+                    <a href="#" class="all">全部課程</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="goods w">
+        <h3>精品推薦</h3>
+        <div class="goods-item">
+            <a href="#">JQuery</a>
+            <a href="#">Spark</a>
+            <a href="#">MySQL</a>
+            <a href="#">JavaWeb</a>
+            <a href="#">MySQL</a>
+            <a href="#">JavaWeb</a>
+        </div>
+        <a href="#" class="mod">修改興趣</a>
+    </div>
+    <div class="box w">
+        <div class="box-hd">
+            <h3>精品推薦</h3>
+            <a href="#">查看全部</a>
+        </div>
+        <div class="box-bd">
+            <ul class="clearfix">
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="c w">
+            <div class="copyright">
+                <img src="ad.png" alt="">
+                <p>一直娱惊喜入驻上海BOOCUP苏河湾书店，将于10.1正式与大家见面！<br>未来我们将在上海以全新方式开启一段新的旅程🔛</p>
+                <a href="#">下載APP</a>
+            </div>
+            <div class="links">
+                <dl>
+                    <dt><a href="#">關於學成網</a></dt>
+                    <dd><a href="#">關於</a></dd>
+                    <dd><a href="#">管理團隊</a></dd>
+                    <dd><a href="#">工作機會</a></dd>
+                    <dd><a href="#">幫助</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">關於學成網</a></dt>
+                    <dd><a href="#">關於</a></dd>
+                    <dd><a href="#">管理團隊</a></dd>
+                    <dd><a href="#">工作機會</a></dd>
+                    <dd><a href="#">幫助</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">關於學成網</a></dt>
+                    <dd><a href="#">關於</a></dd>
+                    <dd><a href="#">管理團隊</a></dd>
+                    <dd><a href="#">工作機會</a></dd>
+                    <dd><a href="#">幫助</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
