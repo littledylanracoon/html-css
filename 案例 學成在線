@@ -201,6 +201,7 @@
 
         }
         .box-bd ul li {
+            position: relative;
             float: left;
             width: 228px;
             height: 270px;
@@ -208,12 +209,18 @@
             margin-right: 15px;
             margin-bottom: 15px;
         }
-        .box-bd ul li img {
+        .box-bd ul li .pic {
             width: 100%;
         }
         .box-bd ul li h4 {
             margin: 20px 20px 20px 25px;
             font-size: 14px;
+        }
+        .box-bd .hot {
+            width: 40px;
+            position: absolute;
+            top: -4px;
+            right: 0;
         }
         .box-bd .info {
             margin: 0 20px 0 25px;
@@ -365,17 +372,17 @@
         </div>
         <div class="box-bd">
             <ul class="clearfix">
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-                <li><img src="202107_type1_1920.jpg" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
-            </ul>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+                <li><em><img src="hot.png" class="hot" alt=""></em><img src="202107_type1_1920.jpg" class="pic" alt=""><h4>从前的车马很慢,书信很远<br>从前信号也不好</h4><div class="info"><span>高級</span> 1125人學習</div></li>
+            </ul>class="hot" 
         </div>
     </div>
     <div class="footer">
