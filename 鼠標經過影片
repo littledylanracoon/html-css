@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p {
+            position: relative;
+            width: 600px;
+            height: 337px;
+            background-color: aliceblue;
+            margin: 30px auto;
+        }
+        .p img {
+            width: 100%;
+        }
+        .up {
+            display: none;
+            position: absolute;
+            background: rgba(14, 44, 95, 0.3) url(tt.jpg) no-repeat center;
+            width: 600px;
+            height: 337px;
+        }
+        .p:hover .up {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+        <div class="up"></div>
+        <img src="202107_type1_1920.jpg" alt="">
+    </div>
+</body>
+</html>
