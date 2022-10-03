@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tb-promo {
+            width: 1000px;
+            height: 500px;
+            background-color: skyblue;
+            margin: 150px auto;
+            position: relative;
+        }
+
+        .tb-promo img {
+            width: 800px;
+            padding-top: 25px;
+            padding-left: 100px;
+        }
+        .tb-promo a {
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            color: white;
+            background: wheat;
+            width: 20px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            left: 50%;
+            
+        }
+        .tb-promo .left {
+            margin-left: -400px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .tb-promo .right {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-left: 380px;
+        }
+        .promo-nav ul li {
+            float: left;
+            list-style: none;
+            margin-right: 5px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 3px;
+        }
+        .promo-nav ul li:hover {
+            background-color: yellow;
+        }
+
+        .promo-nav ul {
+            position: relative;          
+            width: 70px;           
+            height: 15px;
+            background-color: rgba(0, 255, 255, .3);
+            left: 50%;
+            margin-left: -35px;
+            bottom: 25px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="202011_whiteChristmas_type1_1920.jpg" alt="">
+        <a href="#" class="left"> &lt; </a>
+        <a href="#" class="right"> &gt; </a>
+        <div class="promo-nav">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
