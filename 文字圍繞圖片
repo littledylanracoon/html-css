@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+        }
+       img {
+        float: left;
+       }
+    </style>
+</head>
+<body>
+ <div>
+    <img src="99d.png" alt="">
+    <p>【敏求智慧運算學院AI課程】人工智慧運算入門、跨領域、趨勢應用及實作課，無論是從零開始學習的學生，或是已有基礎背景、希望深入實作應用的學生，都可以在這裡找到適合的課程</p>
+ </div>
+</body>
+</html>
