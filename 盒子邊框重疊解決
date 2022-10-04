@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li { /*每個盒子margin往左移動-1px 正好能壓住相鄰盒子邊框*/
+            position: relative;
+            width: 150px;
+            height: 200px;
+            border: 1px solid red;
+            list-style: none;
+            float: left;
+            margin-left: -1px;
+        }
+        ul li:hover { /*鼠標經過盒子就提高盒子層級 如果沒定位則加相對定位保留位置 如果有定位就提高z-index*/
+            border: 1px solid blue;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li>hi</li>
+    <li>hi</li>
+    <li>hi</li>
+    <li>hi</li>
+    <li>hi</li>
+   </ul>
+</body>
+</html>
