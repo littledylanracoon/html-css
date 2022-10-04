@@ -30,7 +30,9 @@
             margin: 10px auto;
             background-color: pink;
         }
-
+        .header .profile {
+            vertical-align: middle;
+        }
         .logo {
             float: left;
         }
@@ -321,7 +323,7 @@
             <button></button>
         </div>
         <div class="user">
-            <img src="1200px.png" alt="">
+            <img src="1200px.png" class="profile" alt="">
             blanket
         </div>
     </div>
