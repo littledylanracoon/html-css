@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 100px auto;
+            /*white-space: normal;  自動換行*/
+            white-space: nowrap; /*強制一行顯示*/
+            overflow: hidden;
+            text-overflow: ellipsis; /*溢出用...代替*/
+            /* 如果要多行省略號 把white-space那行去掉再加上下面三行 可以把盒子高度去掉就會讓文字內容撐開盒子
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>主人都无可奈何、喜欢无端咬人的胡椒跟宥真尼也玩的很好😮‍💨</div>
+</body>
+</html>
