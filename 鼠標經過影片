@@ -35,3 +35,42 @@
     </div>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p {
+            position: relative;
+            width: 600px;
+            height: 337px;
+            background-color: aliceblue;
+            margin: 30px auto;
+        }
+        .p img {
+            width: 100%;
+        }
+        .p::before {
+            content: '';
+            display: none;
+            position: absolute;
+            background: rgba(14, 44, 95, 0.3) url(tt.jpg) no-repeat center;
+            width: 600px;
+            height: 337px;
+        }
+        .p:hover::before { /*經過p後裡面的before顯示*/
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+        <img src="202107_type1_1920.jpg" alt="">
+    </div>
+</body>
+</html>
