@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       input[value] { /*有包含value屬性的input*/
+        color: pink;
+       }
+       input[type=text] { /*只選擇type=text文本框的input*/
+        background-color: aliceblue;
+       } 
+       div[class^=icon] { /*有class屬性且為icon開頭的div*/
+        color: red;
+       }
+       div[class$=data] {
+        color: yellow;
+       }
+       ul li:first-of-type {
+        background-color: pink;
+       }
+       ul li:last-of-type {
+        background-color: yellowgreen;
+       }
+       ul li:nth-of-type(even) {
+        background-color: violet;
+       }
+    </style>
+</head>
+<body>
+   <input type="text" name="" id="">
+   <input type="text" name="" id="">
+   <input type="password" name="" id="">
+   <div class="icon1">嗨嗨嗨</div>
+   <div class="icon2">嗨嗨嗨</div>
+   <div class="icon3">嗨嗨嗨</div>
+   <div>嗨嗨嗨</div>
+   <div class="icon1-data">嗨嗨嗨</div>
+   <div class="icon2-data">嗨嗨嗨</div>
+   <div class="icon3-ico">嗨嗨嗨</div>
+   <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+   </ul>
+</body>
+</html>
