@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .up {
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+            transition: width 1s, background-color 1s;
+        }
+        .up:hover {
+            width: 400px;
+            background-color: gainsboro;
+        }
+        .bar {
+            margin-top: 100px;
+            width: 150px;
+            height: 15px;
+            border: 1px solid red;
+            border-radius: 7px;
+        }
+        .bar_in {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            border-radius: 7px;
+            transition: width 1s;
+        }
+        .bar:hover .bar_in{
+            width: 100%;
+        }
+        .pic {
+            width: 500px;
+            height: 200px;
+            background-color: skyblue;
+            margin-top: 100px;
+            background: url(202011_whiteChristmas_type1_1920.jpg);
+            transition: background-position 1s;
+        }
+        .pic:hover {
+            background-position: -944px -325px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="up"></div>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+    <div class="pic">
+    </div>
+</body>
+
+</html>
